@@ -1,10 +1,12 @@
 from django.shortcuts import render, redirect
 from .models import City
 import requests
+import os
 
 def index(request):
 
-    url = 'https://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=834b5f328bdc2728a4085470da02a73d'
+    API_KEY = os.getenv('WEATHER_API_KEY')
+    url = f"https://api.openweathermap.org/data/2.5/weather?q={{}}&units=metric&appid={API_KEY}"
 
     error_message = ''
 
