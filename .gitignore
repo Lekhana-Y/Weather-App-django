@@ -1,0 +1,40 @@
+# Django standard .gitignore + project specifics
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+.env.local
+.venv
+
+# SQLite DB (regenerate on clone)
+weatherproject/db.sqlite3
+
+# Media/Static (don't commit uploads)
+media/
+staticfiles/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Django migrations (optional: regenerate)
+# weatherproject/weather/migrations/0*_initial.py
+
+# Project summary (optional)
+project_overview.txt
+
+# Temp files
+*.tmp
+
